@@ -202,17 +202,62 @@
 
   <!-- ================= 2. ROOM GUIDE ================= -->
   <div id="room-guide" class="guide-section">
-    <!-- 9 大目錄按鈕 (3x3 九宮格) -->
+    <!-- 9 大目錄按鈕 (3x3 九宮格，支援多國語言切換) -->
     <div class="menu-grid">
-      <div class="menu-btn active" onclick="openTab('tab1', this)">1. 入退室<br><span style="font-size:10px;font-weight:normal;">Check-in/Out</span></div>
-      <div class="menu-btn" onclick="openTab('tab2', this)">2. ルール<br><span style="font-size:10px;font-weight:normal;">House Rules</span></div>
-      <div class="menu-btn" onclick="openTab('tab3', this)">3. ゴミ捨て<br><span style="font-size:10px;font-weight:normal;">Garbage</span></div>
-      <div class="menu-btn" onclick="openTab('tab4', this)">4. 緊急連絡先<br><span style="font-size:10px;font-weight:normal;">Emergency</span></div>
-      <div class="menu-btn menu-btn-warning" onclick="openTab('tab5', this)">5. 喫煙ルール<br><span style="font-size:10px;font-weight:normal;">Smoking</span></div>
-      <div class="menu-btn" onclick="openTab('tab6', this)">6. Wi-Fi<br><span style="font-size:10px;font-weight:normal;">Connect Wi-Fi</span></div>
-      <div class="menu-btn" onclick="openTab('tab7', this)">7. 家電製品<br><span style="font-size:10px;font-weight:normal;">Appliances</span></div>
-      <div class="menu-btn" onclick="openTab('tab8', this)">8. 周辺情報<br><span style="font-size:10px;font-weight:normal;">Facilities</span></div>
-      <div class="menu-btn" onclick="openTab('tab9', this)">9. 当館について<br><span style="font-size:10px;font-weight:normal;">About Us</span></div>
+      <div class="menu-btn active" onclick="openTab('tab1', this)">
+        <span class="lang-ja">1. 入退室<br><span style="font-size:10px;font-weight:normal;">Check-in/Out</span></span>
+        <span class="lang-en">1. Check-in/Out<br><span style="font-size:10px;font-weight:normal;">Check-in/Out</span></span>
+        <span class="lang-zh">1. 入住/退房<br><span style="font-size:10px;font-weight:normal;">Check-in/Out</span></span>
+        <span class="lang-ko">1. 체크인/아웃<br><span style="font-size:10px;font-weight:normal;">Check-in/Out</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab2', this)">
+        <span class="lang-ja">2. ルール<br><span style="font-size:10px;font-weight:normal;">House Rules</span></span>
+        <span class="lang-en">2. Rules<br><span style="font-size:10px;font-weight:normal;">House Rules</span></span>
+        <span class="lang-zh">2. 住宿規定<br><span style="font-size:10px;font-weight:normal;">House Rules</span></span>
+        <span class="lang-ko">2. 이용규칙<br><span style="font-size:10px;font-weight:normal;">House Rules</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab3', this)">
+        <span class="lang-ja">3. ゴミ捨て<br><span style="font-size:10px;font-weight:normal;">Garbage</span></span>
+        <span class="lang-en">3. Garbage<br><span style="font-size:10px;font-weight:normal;">Garbage</span></span>
+        <span class="lang-zh">3. 垃圾處理<br><span style="font-size:10px;font-weight:normal;">Garbage</span></span>
+        <span class="lang-ko">3. 쓰레기<br><span style="font-size:10px;font-weight:normal;">Garbage</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab4', this)">
+        <span class="lang-ja">4. 緊急連絡先<br><span style="font-size:10px;font-weight:normal;">Emergency</span></span>
+        <span class="lang-en">4. Emergency<br><span style="font-size:10px;font-weight:normal;">Emergency</span></span>
+        <span class="lang-zh">4. 緊急聯絡<br><span style="font-size:10px;font-weight:normal;">Emergency</span></span>
+        <span class="lang-ko">4. 비상연락처<br><span style="font-size:10px;font-weight:normal;">Emergency</span></span>
+      </div>
+      <div class="menu-btn menu-btn-warning" onclick="openTab('tab5', this)">
+        <span class="lang-ja">5. 喫煙ルール<br><span style="font-size:10px;font-weight:normal;">Smoking</span></span>
+        <span class="lang-en">5. Smoking<br><span style="font-size:10px;font-weight:normal;">Smoking</span></span>
+        <span class="lang-zh">5. 禁菸規定<br><span style="font-size:10px;font-weight:normal;">Smoking</span></span>
+        <span class="lang-ko">5. 흡연규칙<br><span style="font-size:10px;font-weight:normal;">Smoking</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab6', this)">
+        <span class="lang-ja">6. Wi-Fi<br><span style="font-size:10px;font-weight:normal;">Connect Wi-Fi</span></span>
+        <span class="lang-en">6. Wi-Fi<br><span style="font-size:10px;font-weight:normal;">Connect Wi-Fi</span></span>
+        <span class="lang-zh">6. Wi-Fi<br><span style="font-size:10px;font-weight:normal;">Connect Wi-Fi</span></span>
+        <span class="lang-ko">6. Wi-Fi<br><span style="font-size:10px;font-weight:normal;">Connect Wi-Fi</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab7', this)">
+        <span class="lang-ja">7. 家電製品<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
+        <span class="lang-en">7. Appliances<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
+        <span class="lang-zh">7. 家電設備<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
+        <span class="lang-ko">7. 가전제품<br><span style="font-size:10px;font-weight:normal;">Appliances</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab8', this)">
+        <span class="lang-ja">8. 周辺情報<br><span style="font-size:10px;font-weight:normal;">Facilities</span></span>
+        <span class="lang-en">8. Nearby<br><span style="font-size:10px;font-weight:normal;">Facilities</span></span>
+        <span class="lang-zh">8. 周邊資訊<br><span style="font-size:10px;font-weight:normal;">Facilities</span></span>
+        <span class="lang-ko">8. 주변정보<br><span style="font-size:10px;font-weight:normal;">Facilities</span></span>
+      </div>
+      <div class="menu-btn" onclick="openTab('tab9', this)">
+        <span class="lang-ja">9. 当館について<br><span style="font-size:10px;font-weight:normal;">About Us</span></span>
+        <span class="lang-en">9. About Us<br><span style="font-size:10px;font-weight:normal;">About Us</span></span>
+        <span class="lang-zh">9. 關於我們<br><span style="font-size:10px;font-weight:normal;">About Us</span></span>
+        <span class="lang-ko">9. 숙소소개<br><span style="font-size:10px;font-weight:normal;">About Us</span></span>
+      </div>
     </div>
 
     <!-- 1. 入退室 -->
@@ -426,7 +471,7 @@
         
         <p class="lang-zh" style="margin-top:0; line-height: 1.6;"><strong>室內及建築敷地內全面禁止吸菸。</strong><br>包含加熱菸與電子菸在內，嚴禁在室內吸菸。<br><br>若發現室內有吸菸行為，將收取特殊清潔費及營業損失補償違約金。</p>
         
-        <p class="lang-ko" style="margin-top:0; line-height: 1.6;"><strong>실내 및 부지 내는 전구역 금연입니다.</strong><br>전자담배 및 권련형 담배를 포함하여 실내 흡연은 엄격히 금지되어 있습니다.<br><br>만일 실내 흡연이 적발될 경우 청소비 및 영업 보상비로 위약금이 청구됩니다.</p>
+        <p class="lang-ko" style="margin-top:0; line-height: 1.6;"><strong>실내 및 부지 내는 전구역 금연입니다.</strong><br>전자담배 및 권련형 담배를 포함하여 실내 흡연은 엄격히 금지되어 있습니다.<br><br>만일 실내 흡연이 적発될 경우 청소비 및 영업 보상비로 위약금이 청구됩니다.</p>
       </div>
     </div>
 
@@ -461,12 +506,12 @@
       <p class="lang-zh" style="font-size: 13px; color: #64748b; margin-bottom: 10px;">請選擇欲查看的家電設備：</p>
       <p class="lang-ko" style="font-size: 13px; color: #64748b; margin-bottom: 10px;">확인할 가전제품을 선택해 주세요:</p>
 
-      <!-- 家電子選單按鈕 -->
+      <!-- 家電子選單按鈕 (微波爐已修正為日文 電子レンジ) -->
       <div class="sub-menu-grid">
         <div class="sub-menu-btn active" onclick="openAppliance('app-air', this)">❄️ エアコン / AC</div>
         <div class="sub-menu-btn" onclick="openAppliance('app-light', this)">💡 照明 / Light</div>
         <div class="sub-menu-btn" onclick="openAppliance('app-water', this)">♨️ 給湯器 / Heater</div>
-        <div class="sub-menu-btn" onclick="openAppliance('app-micro', this)">📻 微波爐 / Microwave</div>
+        <div class="sub-menu-btn" onclick="openAppliance('app-micro', this)">📻 電子レンジ / Microwave</div>
         <div class="sub-menu-btn" style="grid-column: span 2;" onclick="openAppliance('app-wash', this)">🧺 洗濯機 / Washer</div>
       </div>
 
@@ -488,7 +533,7 @@
         <img src="air.jpg" alt="Air Conditioner Remote" class="guide-img">
       </div>
 
-      <!-- 2. 照明 -->
+      <!-- 2. 照明 (已新增 lighting2.jpg 照片) -->
       <div id="app-light" class="info-card appliance-detail">
         <div class="appliance-header">
           <div class="appliance-title-main">💡 照明リモコン</div>
@@ -500,7 +545,8 @@
           <li><strong>常夜灯:</strong> Night Light / 夜燈 / 야간등</li>
           <li><strong>明 / 暗:</strong> Brightness / 亮度調節 / 밝기</li>
         </ul>
-        <img src="lighting.jpg" alt="Lighting Remote" class="guide-img">
+        <img src="lighting.jpg" alt="Lighting Remote 1" class="guide-img">
+        <img src="lighting2.jpg" alt="Lighting Remote 2" class="guide-img">
       </div>
 
       <!-- 3. 給湯器 -->
@@ -511,7 +557,7 @@
         </div>
         <ul class="appliance-list">
           <li><strong>入/切:</strong> Power On/Off / 開關 / 전원</li>
-          <li><strong>ふろ自動:</strong> Auto Bath / 自動加熱 /自動 온수</li>
+          <li><strong>ふろ自動:</strong> Auto Bath / 自動加熱 / 自動 온수</li>
           <li><strong>追いたき:</strong> Reheat / 再加熱 / 추가 온수</li>
           <li><strong>温度:</strong> Temperature / 溫度 / 온도</li>
         </ul>
@@ -647,7 +693,7 @@
     // 切換頁面文字顯示
     ['ja', 'en', 'zh', 'ko'].forEach(lang => {
       document.querySelectorAll('.lang-' + lang).forEach(el => {
-        el.style.display = (lang === langCode) ? 'block' : 'none';
+        el.style.display = (lang === langCode) ? 'inline-block' : 'none';
       });
     });
   }
